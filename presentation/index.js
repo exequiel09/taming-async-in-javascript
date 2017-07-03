@@ -230,6 +230,21 @@ export default class Presentation extends React.Component {
             Go to the Demo App
           </Heading>
         </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="15">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Things to remember
+            </Heading>
+          </Appear>
+
+          <Appear fid="15">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              Every async function you write will return a promise,
+              and every single thing you await will ordinarily be a promise.
+            </Text>
+          </Appear>
+        </Slide>
         {/* [Async/Await] ::end */}
       </Deck>
     );
