@@ -29,7 +29,7 @@ require("spectacle/lib/themes/default/index.css");
 
 const images = {
   callbacks: {
-    hell: require("../assets/callbacks/hell.png")
+    hell: require("../assets/img/callbacks/hell.png")
   }
 };
 
