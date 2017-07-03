@@ -7,6 +7,8 @@ import {
   Deck,
   Heading,
   Image,
+  List,
+  ListItem,
   Slide,
   Text
 } from "spectacle";
@@ -29,6 +31,7 @@ const images = {
   backgrounds: {
     shocked1: require("../assets/img/backgrounds/shocked-1.gif"),
     planetHack: require("../assets/img/backgrounds/hack-the-planet.gif"),
+    hackGossip: require("../assets/img/backgrounds/hack-gossip.gif"),
   }
 };
 
@@ -126,6 +129,62 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         {/* [Named Functions] ::end */}
+
+        {/* [Promises] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            ES2015 Promises
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="6">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What are promises?
+            </Heading>
+          </Appear>
+
+          <Appear fid="7">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              A promise represents the eventual result of an asynchronous operation.
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            A promise has 3 states
+          </Heading>
+
+          <List>
+            <Appear fid="8">
+              <ListItem>Resolved/Fulfilled</ListItem>
+            </Appear>
+
+            <Appear fid="9">
+              <ListItem>Rejected</ListItem>
+            </Appear>
+
+            <Appear fid="10">
+              <ListItem>Pending</ListItem>
+            </Appear>
+          </List>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Go to the Demo App
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgImage={images.backgrounds.hackGossip.replace("/", "")} bgDarken={0.25}>
+          <Appear fid="11">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Much better than named functions. But it can be better.
+            </Heading>
+          </Appear>
+        </Slide>
+        {/* [Promises] ::end */}
       </Deck>
     );
   }
