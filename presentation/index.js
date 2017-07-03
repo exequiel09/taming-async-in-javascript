@@ -27,7 +27,8 @@ const images = {
     hell: require("../assets/img/callbacks/hell.png")
   },
   backgrounds: {
-    shocked1: require("../assets/img/backgrounds/shocked-1.gif")
+    shocked1: require("../assets/img/backgrounds/shocked-1.gif"),
+    planetHack: require("../assets/img/backgrounds/hack-the-planet.gif"),
   }
 };
 
@@ -103,6 +104,28 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         {/* [Callbacks] ::end */}
+
+        {/* [Named Functions] ::start */}
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Solution? Named functions.
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Go to the Demo App
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgImage={images.backgrounds.planetHack.replace("/", "")} bgDarken={0.25}>
+          <Appear fid="5">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Much better than nested callbacks.
+            </Heading>
+          </Appear>
+        </Slide>
+        {/* [Named Functions] ::end */}
       </Deck>
     );
   }
