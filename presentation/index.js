@@ -30,6 +30,9 @@ require("spectacle/lib/themes/default/index.css");
 const images = {
   callbacks: {
     hell: require("../assets/img/callbacks/hell.png")
+  },
+  backgrounds: {
+    shocked1: require("../assets/img/backgrounds/shocked-1.gif")
   }
 };
 
@@ -93,7 +96,7 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        <Slide transition={[]} bgColor="secondary" textColor="primary">
+        <Slide transition={[]} bgImage={images.backgrounds.shocked1.replace("/", "")} bgDarken={0.25}>
           <Appear fid="3">
             <Heading size={1} fit caps lineHeight={1} textColor="primary">
               Callback Hell
