@@ -7,6 +7,8 @@ import {
   Deck,
   Heading,
   Image,
+  List,
+  ListItem,
   Slide,
   Text
 } from "spectacle";
@@ -146,6 +148,26 @@ export default class Presentation extends React.Component {
               A promise represents the eventual result of an asynchronous operation.
             </Text>
           </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            A promise has 3 states
+          </Heading>
+
+          <List>
+            <Appear fid="8">
+              <ListItem>Resolved/Fulfilled</ListItem>
+            </Appear>
+
+            <Appear fid="9">
+              <ListItem>Rejected</ListItem>
+            </Appear>
+
+            <Appear fid="10">
+              <ListItem>Pending</ListItem>
+            </Appear>
+          </List>
         </Slide>
         {/* [Promises] ::end */}
       </Deck>
