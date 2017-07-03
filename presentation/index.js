@@ -3,6 +3,7 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
+  Appear,
   BlockQuote,
   Cite,
   Deck,
@@ -53,6 +54,27 @@ export default class Presentation extends React.Component {
           <Text margin="10px 0 0" textColor="tertiary" size={6}>
             Exequiel Ceasar Navarrete
           </Text>
+        </Slide>
+
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Callbacks
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="1">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What are callbacks?
+            </Heading>
+          </Appear>
+
+          <Appear fid="2">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              A callback function, is a function that is passed to another function as an argument,
+              and the callback function is called (or executed) inside the other function.
+            </Text>
+          </Appear>
         </Slide>
       </Deck>
     );
