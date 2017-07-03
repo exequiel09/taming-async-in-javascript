@@ -77,6 +77,12 @@ export default class Presentation extends React.Component {
             </Text>
           </Appear>
         </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Go to the Demo App
+          </Heading>
+        </Slide>
         {/* [Callbacks] ::end */}
       </Deck>
     );
