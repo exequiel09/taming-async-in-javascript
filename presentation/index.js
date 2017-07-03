@@ -126,6 +126,14 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         {/* [Named Functions] ::end */}
+
+        {/* [Promises] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            ES2015 Promises
+          </Heading>
+        </Slide>
+        {/* [Promises] ::end */}
       </Deck>
     );
   }
