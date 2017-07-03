@@ -192,6 +192,23 @@ export default class Presentation extends React.Component {
             ES2017 Async/Await
           </Heading>
         </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="12">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What is Async/Await?
+            </Heading>
+          </Appear>
+
+          <Appear fid="13">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              With async functions, you can await on a promise. This halts the function
+              in a non-blocking way, waits for the promise to resolve &amp; returns the value.
+              If the promise rejects, it throws with the rejection value,
+              so you can deal with it using catch.
+            </Text>
+          </Appear>
+        </Slide>
         {/* [Async/Await] ::end */}
       </Deck>
     );
