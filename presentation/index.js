@@ -28,6 +28,9 @@ const images = {
   callbacks: {
     hell: require("../assets/img/callbacks/hell.png")
   },
+  asyncAwait: {
+    support: require("../assets/img/async-await/async-await-can-i-use.png")
+  },
   backgrounds: {
     shocked1: require("../assets/img/backgrounds/shocked-1.gif"),
     planetHack: require("../assets/img/backgrounds/hack-the-planet.gif"),
@@ -207,6 +210,18 @@ export default class Presentation extends React.Component {
               If the promise rejects, it throws with the rejection value,
               so you can deal with it using catch.
             </Text>
+          </Appear>
+        </Slide>
+
+       <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="14">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Browser/Platform support
+            </Heading>
+          </Appear>
+
+          <Appear fid="15">
+            <Image src={images.asyncAwait.support} width={900}></Image>
           </Appear>
         </Slide>
         {/* [Async/Await] ::end */}
