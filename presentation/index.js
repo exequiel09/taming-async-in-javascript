@@ -4,14 +4,9 @@ import React from "react";
 // Import Spectacle Core tags
 import {
   Appear,
-  BlockQuote,
-  Cite,
   Deck,
   Heading,
   Image,
-  ListItem,
-  List,
-  Quote,
   Slide,
   Text
 } from "spectacle";
