@@ -8,6 +8,7 @@ import {
   Cite,
   Deck,
   Heading,
+  Image,
   ListItem,
   List,
   Quote,
@@ -27,7 +28,9 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  // img: require("../assets/img.jpg")
+  callbacks: {
+    hell: require("../assets/callbacks/hell.png")
+  }
 };
 
 preloader(images);
@@ -82,6 +85,24 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Go to the Demo App
           </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Problems with callbacks?
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="3">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Callback Hell
+            </Heading>
+          </Appear>
+
+          <Appear fid="4">
+            <Image src={images.callbacks.hell}></Image>
+          </Appear>
         </Slide>
         {/* [Callbacks] ::end */}
       </Deck>
