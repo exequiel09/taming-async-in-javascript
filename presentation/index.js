@@ -133,6 +133,20 @@ export default class Presentation extends React.Component {
             ES2015 Promises
           </Heading>
         </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="6">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What are promises?
+            </Heading>
+          </Appear>
+
+          <Appear fid="7">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              A promise represents the eventual result of an asynchronous operation.
+            </Text>
+          </Appear>
+        </Slide>
         {/* [Promises] ::end */}
       </Deck>
     );
