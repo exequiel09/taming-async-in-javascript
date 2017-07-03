@@ -3,13 +3,10 @@ import React from "react";
 
 // Import Spectacle Core tags
 import {
-  BlockQuote,
-  Cite,
+  Appear,
   Deck,
   Heading,
-  ListItem,
-  List,
-  Quote,
+  Image,
   Slide,
   Text
 } from "spectacle";
@@ -26,7 +23,12 @@ require("spectacle/lib/themes/default/index.css");
 
 
 const images = {
-  // img: require("../assets/img.jpg")
+  callbacks: {
+    hell: require("../assets/img/callbacks/hell.png")
+  },
+  backgrounds: {
+    shocked1: require("../assets/img/backgrounds/shocked-1.gif")
+  }
 };
 
 preloader(images);
@@ -54,6 +56,53 @@ export default class Presentation extends React.Component {
             Exequiel Ceasar Navarrete
           </Text>
         </Slide>
+
+        {/* [Callbacks] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Callbacks
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="1">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What are callbacks?
+            </Heading>
+          </Appear>
+
+          <Appear fid="2">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              A callback function, is a function that is passed to another function as an argument,
+              and the callback function is called (or executed) inside the other function.
+            </Text>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Go to the Demo App
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Problems with callbacks?
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgImage={images.backgrounds.shocked1.replace("/", "")} bgDarken={0.25}>
+          <Appear fid="3">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Callback Hell
+            </Heading>
+          </Appear>
+
+          <Appear fid="4">
+            <Image src={images.callbacks.hell}></Image>
+          </Appear>
+        </Slide>
+        {/* [Callbacks] ::end */}
       </Deck>
     );
   }
