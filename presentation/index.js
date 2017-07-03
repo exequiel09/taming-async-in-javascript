@@ -31,6 +31,7 @@ const images = {
   backgrounds: {
     shocked1: require("../assets/img/backgrounds/shocked-1.gif"),
     planetHack: require("../assets/img/backgrounds/hack-the-planet.gif"),
+    hackGossip: require("../assets/img/backgrounds/hack-gossip.gif"),
   }
 };
 
@@ -168,6 +169,20 @@ export default class Presentation extends React.Component {
               <ListItem>Pending</ListItem>
             </Appear>
           </List>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Go to the Demo App
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgImage={images.backgrounds.hackGossip.replace("/", "")} bgDarken={0.25}>
+          <Appear fid="11">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Much better than named functions. But it can be better.
+            </Heading>
+          </Appear>
         </Slide>
         {/* [Promises] ::end */}
       </Deck>
