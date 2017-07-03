@@ -28,6 +28,9 @@ const images = {
   callbacks: {
     hell: require("../assets/img/callbacks/hell.png")
   },
+  asyncAwait: {
+    support: require("../assets/img/async-await/async-await-can-i-use.png")
+  },
   backgrounds: {
     shocked1: require("../assets/img/backgrounds/shocked-1.gif"),
     planetHack: require("../assets/img/backgrounds/hack-the-planet.gif"),
@@ -185,6 +188,64 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         {/* [Promises] ::end */}
+
+        {/* [Async/Await] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            ES2017 Async/Await
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="12">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              What is Async/Await?
+            </Heading>
+          </Appear>
+
+          <Appear fid="13">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              With async functions, you can await on a promise. This halts the function
+              in a non-blocking way, waits for the promise to resolve &amp; returns the value.
+              If the promise rejects, it throws with the rejection value,
+              so you can deal with it using catch.
+            </Text>
+          </Appear>
+        </Slide>
+
+       <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="14">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Browser/Platform support
+            </Heading>
+          </Appear>
+
+          <Appear fid="15">
+            <Image src={images.asyncAwait.support} width={900}></Image>
+          </Appear>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            Go to the Demo App
+          </Heading>
+        </Slide>
+
+        <Slide transition={[]} bgColor="secondary" textColor="primary">
+          <Appear fid="15">
+            <Heading size={1} fit caps lineHeight={1} textColor="primary">
+              Things to remember
+            </Heading>
+          </Appear>
+
+          <Appear fid="15">
+            <Text margin="10px 0 0" textColor="primary" size={1}>
+              Every async function you write will return a promise,
+              and every single thing you await will ordinarily be a promise.
+            </Text>
+          </Appear>
+        </Slide>
+        {/* [Async/Await] ::end */}
       </Deck>
     );
   }
