@@ -1,8 +1,8 @@
 {
-  "name": "spectacle-boilerplate",
-  "version": "1.0.1",
-  "description": "ReactJS Powered Presentation Framework",
-  "main": "lib/index.js",
+  "name": "taming-async-in-javascript",
+  "version": "1.0.0",
+  "description": "Presentation about dealing async using latest JavaScript structures",
+  "main": "presentation/index.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
@@ -10,7 +10,7 @@
     "deploy": "npm run clean & npm run build && surge -p .",
     "start": "cross-env NODE_ENV=development node server.js"
   },
-  "author": "",
+  "author": "Exequiel Ceasar Navarrete <exequiel.navarrete09@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "3.0.3",
