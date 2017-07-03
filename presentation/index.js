@@ -185,6 +185,14 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
         {/* [Promises] ::end */}
+
+        {/* [Async/Await] ::start */}
+        <Slide transition={[]} bgColor="tertiary" textColor="primary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            ES2017 Async/Await
+          </Heading>
+        </Slide>
+        {/* [Async/Await] ::end */}
       </Deck>
     );
   }
