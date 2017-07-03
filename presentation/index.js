@@ -56,6 +56,7 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
 
+        {/* [Callbacks] ::start */}
         <Slide transition={[]} bgColor="tertiary" textColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
             Callbacks
@@ -76,6 +77,7 @@ export default class Presentation extends React.Component {
             </Text>
           </Appear>
         </Slide>
+        {/* [Callbacks] ::end */}
       </Deck>
     );
   }
